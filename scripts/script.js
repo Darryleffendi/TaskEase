@@ -243,10 +243,9 @@ async function hideGui() {
 // Keypress Handler
 $(document).on("keydown", function(e) {
     // If escape to exit GUI
-    if($(window).width() >= 680) {
-        if(guishown == 1 && e.key == "Escape") hideGui();   
-        if(guishown == 2 && e.key == "Escape") hideGui();   
-    }
+    if(guishown == 1 && e.key == "Escape") hideGui();   
+    if(guishown == 2 && e.key == "Escape") hideGui();   
+    
     if(guishown == 1 && e.key == "Enter") addTask();
     
     // If want to submit a search query
