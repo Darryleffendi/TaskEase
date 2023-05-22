@@ -213,6 +213,12 @@ async function displayGui(type) {
 
     if(type == 'addTask') {
         $('.add-task-div').css("display", "block");
+        let today = new Date();
+        let month = today.getMonth() + 1;
+        if(month < 10) month = "0" + month;
+
+        $("#add_date").val(today.getFullYear() + '-' + month + '-' + today.getDate())
+        $("#add_time").val("23:59")
         guishown = 1;
     }
     else if(type == 'notif') {
