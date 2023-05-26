@@ -180,8 +180,6 @@ function sendNotif(tommorowList, hourList, pastList)
     let notifList = JSON.parse(localStorage.getItem("notifList"));
     if(notifList === null) notifList = [];
 
-    console.log(notifList);
-
     if(hourList.length > 0) {
         notifContent = notifContent +
             "<div class=\"notif-item\">" +

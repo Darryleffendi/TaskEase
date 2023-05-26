@@ -153,8 +153,6 @@
                     <div class="gui-window-btn gui-full" onclick="guiFullScreen()"></div>
                 </span>
 
-                <!-- Settings -->
-
                 <!-- Add Task -->
                 <div class="add-task-div gui-input-container">
                     <h2>Add new task</h2>
@@ -172,6 +170,19 @@
                     <p class="gui-error-msg"></p>
 
                     <input type="button" class="gui-submit bg-contrast-lighter" value="Submit" onclick="addTask()">
+                </div>
+
+                <!-- Notifications -->
+                <div class="notif-gui-div gui-input-container">
+                    <h2>Notifications</h2>
+                    <div class="notif-gui-h">
+                        <label class="switch">
+                            <input type="checkbox" class="notif-checkbox" onclick="notifModeChange()">
+                        </label>
+                        <input type="button" class="gui-clear bg-contrast-lighter" value="Clear Notifications" onclick="clearNotif()">
+                    </div>
+
+                    <div class="notif-gui-content scroll"></div>
                 </div>
             </div>
         </div>
